@@ -1,12 +1,16 @@
 {{#each this}}
-    <li>{{name}}</li>
-    <li>Capital:{{capital}}</li>
-    <li>Population:{{population}}</li>
-    <h2>Languages</h2>
-    <ul>
-        {{#each languages}}
-        <li>{{this.name}}</li>
-        {{/each}}
-    </ul>
-    <img src={{flag}} alt={{denonym}}>
+    <li class="name1 mark">{{name}}</li>
+    <li class="capital1 mark">Capital:{{capital}}</li>
+    <li class="population1 mark">Population:{{population}}</li>
+    <li class="languages1 mark">Languages
+        <ul> 
+            {{#each languages}}
+            <li class="language1">{{this.name}}</li>
+            {{/each}}
+        </ul>
+    </li>
+    <li class="mark">
+        <img class="img1" src={{flag}} alt={{denonym}}>
+    </li>
+    
 {{/each}}
