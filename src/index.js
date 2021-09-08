@@ -24,7 +24,7 @@ const fetchUrl = arg1 => {
         refs.ulNode.innerHTML = test;
       } else {
         alert({
-            text: 'Too many matches found. Please enter a more specific query!',
+            text: 'Too many  matches found. Please enter a more specific query!',
             delay: 500
         });
       }
